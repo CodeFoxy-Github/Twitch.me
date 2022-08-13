@@ -8,3 +8,34 @@ body:
   attributes:
     value: |
       Thanks for taking the time to fill out this bug! If you need real-time help, join us on Discord.
+- type: input
+  id: name
+  attributes:
+    label: Bug name
+    description: "Describe the bug"
+    placeholder: "Whenever"
+  validations:
+    required: true
+    
+    - type: input
+  id: Description
+  attributes:
+    label: Description
+    description: "What you do when the bug triggers"
+    placeholder: "Whenever"
+  validations:
+    required: true
+    
+    body:
+- type: dropdown
+  id: download
+  attributes:
+    label: W
+    options:
+      - Chrome
+      - Edge
+      - Opera
+      - Firefox
+      - Other
+  validations:
+    required: true
