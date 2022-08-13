@@ -18,7 +18,7 @@ body:
   validations:
     required: true
     
-    - type: input
+- type: input
   id: Description
   attributes:
     label: Description
