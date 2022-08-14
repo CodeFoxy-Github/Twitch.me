@@ -1,4 +1,5 @@
 name: "Report a bug!"
+about: "Nah"
 body:
 - type: markdown
   attributes:
