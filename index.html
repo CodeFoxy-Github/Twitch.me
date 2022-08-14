@@ -12,6 +12,11 @@
   </head>
   <body onload="script();"></body>
   <body>
+    <script>
+      function reset(){
+        document.getElementById("input").value = "";
+      }
+    </script>
     <body onload="hidewhenload();">
     <script>
     function hidewhenload(){
@@ -21,11 +26,11 @@
    <script>
   
         function clicked() {
-
+          
           document.getElementById("hide1").hidden = true;
           document.getElementById("hide2").hidden = true;
           document.getElementById("hide3").hidden = false;
-         document.getElementById("text3").innerHTML = ('ID number: ' + id);
+         document.getElementById("text3").innerHTML = ('https://twitch-me.codefoxy.cf/iframe.html' + id);
         }
 
     </script>
@@ -40,6 +45,7 @@
       <div class="card" id="hide2">
         <label class="input">
           <input
+            id="input"
             class="input__field"
             type="text"
             placeholder=" "
@@ -49,7 +55,7 @@
 
         <div class="button-group">
           <button onclick="clicked()">Send</button>
-          <button type="reset">Reset</button>
+          <button onclick="reset();"type="reset">Reset</button>
         </div>
       </div>
 
