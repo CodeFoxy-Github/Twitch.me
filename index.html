@@ -10,16 +10,16 @@
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body onload="script();"></body>
+  <body onload="hidewhenload();"></body>
   <body>
     <script>
       function reset(){
         document.getElementById("input").value = "";
       }
     </script>
-    <body onload="hidewhenload();">
     <script>
     function hidewhenload(){
+      setTimeout(() => {console.log("Loading")}, 1000);
       document.getElementById("hide3").hidden = true;
     }
     </script>
@@ -41,6 +41,8 @@
       <h2 id="hide1">Enter The Username To start!</h2>
       <h2 id="hide3">Use This Url To embed:</h2>
       <h2 id="text3"></h2>
+      <h2 id="hide3">Preview</h2>
+      <iframe id="hide3" src='https://twitch-me.codefoxy.cf/iframe.html' + id></iframe>
       </div>
       <div class="card" id="hide2">
         <label class="input">

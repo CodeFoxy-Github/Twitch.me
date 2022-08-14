@@ -11,8 +11,7 @@
         const urlParams = new URLSearchParams(queryString);
         const Username = urlParams.get('Username')
         const player = ("https://player.twitch.tv/?channel=" + Username + "&parent=codefoxy.cf");
-        let iframejs = document.getElementById("iframe");
-        iframejs.src = player
+        location = player
     </script>
 </body>
 </html>
