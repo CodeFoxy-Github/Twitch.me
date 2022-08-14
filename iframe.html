@@ -3,26 +3,16 @@
 
 </head>
 <body>
-    <!-- iframe embed -->
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
 
-    <!-- Load the Twitch embed JavaScript file -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: Username,
-      });
-    </script>
+  <iframe id="iframe"></iframe>
 
     <script>
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const Username = urlParams.get('Username')
+        const player = ("https://player.twitch.tv/?channel=" + Username + "&parent=codefoxy.cf");
+        let iframejs = document.getElementById("iframe");
+        iframejs.src = player
     </script>
 </body>
 </html>
