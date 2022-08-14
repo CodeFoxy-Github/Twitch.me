@@ -2,7 +2,7 @@
   <head>
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 
-<link rel="icon" href=favicon.ico" type="image/x-icon"/> 
+<link rel="icon" href="favicon.ico" type="image/x-icon"/> 
     <title>Twitch.me</title>
     <link
       rel="stylesheet"
@@ -12,19 +12,17 @@
   </head>
   <body>
                                              
-          <script src="jquery-1.10.2.min.js"></script>
-                                                                               
-    <script>
+   <script>
         
         function clicked() {
 
-    $("card").hide();
+          document.getElementById("welcome").hidden = true;
          
         }
 
     </script>
     <!-- partial:index.partial.html -->
-    <article class="l-design-widht">
+    <article class="l-design-widht" id="welcome">
       <h1>Twitch.me</h1>
       
       <h2>Enter The Username To start!</h2>
