@@ -10,7 +10,9 @@
         const Username = urlParams.get('Username')
         const player = ("https://player.twitch.tv/?channel=" + Username + "&parent=codefoxy.cf");
         const html = ('\<iframe id=\"iframe-window\"src=\" ' + player + '\"\>\</iframe\>')
-        document.innerHTML += html;
+        document.getElementById("player").insertAdjacentHTML("afterend",
+                `\<iframe id=\"iframe-window\"src=\" ` + player + `\"\>\</iframe\>`);
+        }
     </script>
     <div id="player"></div>
 </body>
